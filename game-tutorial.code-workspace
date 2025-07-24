@@ -19,6 +19,22 @@
         {
             "name": "📁 Stage 4 - Database Integration",
             "path": "./packages/stage-4"
+        },
+        {
+            "name": "📖 Stage 1 Starter",
+            "path": "./packages/stage-1-starter"
+        },
+        {
+            "name": "📖 Stage 2 Starter", 
+            "path": "./packages/stage-2-starter"
+        },
+        {
+            "name": "📖 Stage 3 Starter",
+            "path": "./packages/stage-3-starter"
+        },
+        {
+            "name": "📖 Stage 4 Starter",
+            "path": "./packages/stage-4-starter"
         }
     ],
     "settings": {

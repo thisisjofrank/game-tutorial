@@ -1,27 +1,32 @@
 # 🦕 Dino Runner Game Tutorial
 
-A comprehensive step-by-step tutorial series for building a Dino Runner game using Deno and TypeScript. Learn modern web development by building a complete game from scratch!
+A comprehensive step-by-step tutorial series for building a Dino Runner game
+using Deno and TypeScript. Learn modern web development by building a complete
+game from scratch!
 
 ## Quick Start
 
 **New to this tutorial?** Start here:
 
-1. **Install Deno**: Visit [deno.com](https://deno.com/) and follow installation instructions
-2. **Clone this repository**: `git clone https://github.com/thisisjofrank/game-tutorial.git`
+1. **Install Deno**: Visit [deno.com](https://deno.com/) and follow installation
+   instructions
+2. **Clone this repository**:
+   `git clone https://github.com/thisisjofrank/game-tutorial.git`
 3. **Set up environment**: `cp .env.example .env` (edit if needed)
 4. **Start with Stage 1**: `deno task dev:stage1`
 5. **Open your browser**: Visit [http://localhost:8000](http://localhost:8000)
 
 ## Tutorial Progression
 
-This tutorial is designed to be followed in order. Each stage builds on the previous one:
+This tutorial is designed to be followed in order. Each stage builds on the
+previous one:
 
-| Stage | Focus | What You'll Learn | 
-|-------|-------|------------------|
-| **[Stage 1](packages/stage-1/README.md)** | Foundation & Setup | Basic web server, static files, API endpoints |
-| **[Stage 2](packages/stage-2/README.md)** | Enhanced Features | Environment config, error handling, enhanced API |
-| **[Stage 3](packages/stage-3/README.md)** | Advanced Gameplay | Game logic, score tracking, advanced mechanics |
-| **[Stage 4](packages/stage-4/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization |
+| Stage                                     | Focus                | What You'll Learn                                |
+| ----------------------------------------- | -------------------- | ------------------------------------------------ |
+| **[Stage 1](packages/stage-1/README.md)** | Foundation & Setup   | Basic web server, static files, API endpoints    |
+| **[Stage 2](packages/stage-2/README.md)** | Enhanced Features    | Environment config, error handling, enhanced API |
+| **[Stage 3](packages/stage-3/README.md)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics   |
+| **[Stage 4](packages/stage-4/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization     |
 
 ## Running the Stages
 
@@ -121,4 +126,6 @@ All dependencies are managed at the workspace level in the root `deno.json`.
 
 ## Development
 
-Each stage can be developed independently while sharing the workspace configuration. The stages are designed to be educational, showing progressive enhancement of the game from basic setup to full database integration.
+Each stage can be developed independently while sharing the workspace
+configuration. The stages are designed to be educational, showing progressive
+enhancement of the game from basic setup to full database integration.

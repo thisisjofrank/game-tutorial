@@ -10,3 +10,15 @@
 [submodule "packages/stage-4"]
 	path = packages/stage-4
 	url = https://github.com/thisisjofrank/game-tutorial-stage-4.git
+[submodule "packages/packages/stage-1-starter"]
+	path = packages/packages/stage-1-starter
+	url = https://github.com/thisisjofrank/game-tutorial-stage-1-starter.git
+[submodule "packages/packages/stage-2-starter"]
+	path = packages/packages/stage-2-starter
+	url = https://github.com/thisisjofrank/game-tutorial-stage-2-starter.git
+[submodule "packages/packages/stage-3-starter"]
+	path = packages/packages/stage-3-starter
+	url = https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git
+[submodule "packages/stage-4-starter"]
+	path = packages/stage-4-starter
+	url = https://github.com/thisisjofrank/game-tutorial-stage-4-starter.git

@@ -1,6 +1,7 @@
 # Environment Setup Guide
 
-This document explains how to configure environment variables for the Dino Runner Game tutorial monorepo.
+This document explains how to configure environment variables for the Dino
+Runner Game tutorial monorepo.
 
 ## Quick Setup
 
@@ -10,7 +11,8 @@ This document explains how to configure environment variables for the Dino Runne
    cp .env.example .env
    ```
 
-2. **Edit the `.env` file** with your preferred text editor and update the values as needed.
+2. **Edit the `.env` file** with your preferred text editor and update the
+   values as needed.
 
 ## Environment Variables Reference
 
@@ -33,7 +35,8 @@ DATABASE_URL=postgresql://username:password@host:port/database
 
 - **Neon:** `postgresql://user:pass@host.neon.tech/db?sslmode=require`
 - **Local:** `postgresql://postgres:password@localhost:5432/dino_runner`
-- **Supabase:** `postgresql://postgres:pass@db.project.supabase.co:5432/postgres`
+- **Supabase:**
+  `postgresql://postgres:pass@db.project.supabase.co:5432/postgres`
 
 #### Option 2: Individual Database Settings
 
@@ -74,7 +77,9 @@ HOST=localhost
 ```
 
 ### Stage 4
-Requires database configuration in addition to server settings. Choose one of the three database configuration options above.
+
+Requires database configuration in addition to server settings. Choose one of
+the three database configuration options above.
 
 ## Database Setup for Stage 4
 
@@ -94,17 +99,8 @@ Requires database configuration in addition to server settings. Choose one of th
 
 ## Testing Your Configuration
 
-### Test Stages 1-3
-
 ```bash
-cd packages/stage-1
-deno run --allow-net --allow-env --allow-read src/main.ts
-```
-
-### Test Stage 4
-
-```bash
-cd packages/stage-4
+cd packages/stage-(1|2|3|4)
 deno run --allow-net --allow-env --allow-read src/main.ts
 ```
 
@@ -113,20 +109,3 @@ The application will automatically:
 - Load environment variables from the root `.env` file
 - Initialize the database schema (Stage 4)
 - Display connection status in the console
-
-## Troubleshooting
-
-### Environment File Not Found
-
-Make sure you've copied `.env.example` to `.env` in the **root directory** (`d:\game\.env`), not in individual stage directories.
-
-### Database Connection Issues (Stage 4)
-
-1. Verify your database is running and accessible
-2. Check your connection string format
-3. Ensure your database user has the required permissions
-4. For cloud databases, verify network connectivity and SSL settings
-
-### Port Already in Use
-
-If port 8000 is busy, change the `PORT` value in your `.env` file to an available port (e.g., 8001, 3000, etc.).
