@@ -1,4 +1,4 @@
-# 🦕 Dino Runner Game Tutorial - Monorepo
+# 🦕 Dino Runner Game Tutorial
 
 A comprehensive tutorial series for building a Dino Runner game using Deno and TypeScript, organized as a Deno workspace.
 
@@ -6,7 +6,7 @@ A comprehensive tutorial series for building a Dino Runner game using Deno and T
 
 This monorepo contains 4 tutorial stages, each building upon the previous one:
 
-```
+```text
 game-tutorial/
 ├── deno.json                 # Workspace configuration
 ├── packages/
