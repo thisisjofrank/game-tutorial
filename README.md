@@ -1,52 +1,50 @@
 # 🦕 Dino Runner Game Tutorial
 
-A comprehensive tutorial series for building a Dino Runner game using Deno and TypeScript, organized as a Deno workspace.
+A comprehensive step-by-step tutorial series for building a Dino Runner game using Deno and TypeScript. Learn modern web development by building a complete game from scratch!
 
-## Project Structure
+## Quick Start
 
-This monorepo contains 4 tutorial stages, each building upon the previous one:
+**New to this tutorial?** Start here:
 
-```text
-game-tutorial/
-├── deno.json                 # Workspace configuration
-├── packages/
-│   ├── stage-1/              # Foundation & Setup
-│   ├── stage-2/              # Enhanced Features
-│   ├── stage-3/              # Advanced Gameplay
-│   └── stage-4/              # Database Integration & Global Leaderboards
-└── README.md
-```
+1. **Install Deno**: Visit [deno.com](https://deno.com/) and follow installation instructions
+2. **Clone this repository**: `git clone https://github.com/thisisjofrank/game-tutorial.git`
+3. **Set up environment**: `cp .env.example .env` (edit if needed)
+4. **Start with Stage 1**: `deno task dev:stage1`
+5. **Open your browser**: Visit [http://localhost:8000](http://localhost:8000)
 
-## Getting Started
+## Tutorial Progression
 
-### Prerequisites
+This tutorial is designed to be followed in order. Each stage builds on the previous one:
 
-- [Deno](https://deno.com/) installed on your system
-- For Stage 4: PostgreSQL database (we recommend [Neon](https://neon.tech/) for cloud hosting)
+| Stage | Focus | What You'll Learn | 
+|-------|-------|------------------|
+| **[Stage 1](packages/stage-1/README.md)** | Foundation & Setup | Basic web server, static files, API endpoints |
+| **[Stage 2](packages/stage-2/README.md)** | Enhanced Features | Environment config, error handling, enhanced API |
+| **[Stage 3](packages/stage-3/README.md)** | Advanced Gameplay | Game logic, score tracking, advanced mechanics |
+| **[Stage 4](packages/stage-4/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization |
 
-### Environment Setup
+## Running the Stages
 
-The monorepo uses a shared environment configuration:
+### Quick Commands (from root directory)
 
 ```bash
-# Copy the example environment file
-cp .env.example .env
+# Development mode (auto-reload on file changes)
+deno task dev:stage1    # Stage 1: Foundation
+deno task dev:stage2    # Stage 2: Enhanced Features  
+deno task dev:stage3    # Stage 3: Advanced Gameplay
+deno task dev:stage4    # Stage 4: Database Integration
 
-# Edit .env with your configuration
-# For Stages 1-3: Only PORT and HOST are needed
-# For Stage 4: Add your database credentials
+# Production mode
+deno task start:stage1  # etc...
 ```
 
-The `.env` file contains configuration for all stages:
+### Alternative: Navigate to individual stages
 
-- **Stages 1-3**: Basic server configuration (PORT, HOST)
-- **Stage 4**: Database connection settings, feature flags
+```bash
+cd packages/stage-1
+deno task dev
+```
 
-### Running the Tutorial Stages
-
-You can run any stage from the workspace root using the provided tasks:
-
-#### Development Mode (with file watching)
 ```bash
 # Stage 1 - Foundation & Setup
 deno task dev:stage1
@@ -62,6 +60,7 @@ deno task dev:stage4
 ```
 
 #### Production Mode
+
 ```bash
 # Stage 1
 deno task start:stage1
@@ -88,22 +87,26 @@ deno task dev
 ## Tutorial Stages
 
 ### Stage 1: Foundation & Setup
+
 - Basic web server setup with Oak
 - Static file serving
 - Simple API endpoints
 - Health checks
 
 ### Stage 2: Enhanced Features
+
 - Environment configuration
 - Improved error handling
 - Extended API functionality
 
 ### Stage 3: Advanced Gameplay
+
 - Game logic implementation
 - Score tracking
 - Advanced game mechanics
 
 ### Stage 4: Database Integration & Global Leaderboards
+
 - PostgreSQL database integration
 - User customization features
 - Global leaderboard system
