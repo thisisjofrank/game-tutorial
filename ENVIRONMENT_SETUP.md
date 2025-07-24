@@ -5,6 +5,7 @@ This document explains how to configure environment variables for the Dino Runne
 ## Quick Setup
 
 1. **Copy the environment template:**
+
    ```bash
    cp .env.example .env
    ```
@@ -14,23 +15,28 @@ This document explains how to configure environment variables for the Dino Runne
 ## Environment Variables Reference
 
 ### Server Configuration (All Stages)
+
 - `PORT`: Server port (default: 8000)
 - `HOST`: Server host (default: localhost)
 
 ### Database Configuration (Stage 4 Only)
 
 #### Option 1: DATABASE_URL (Recommended)
+
 Use a single connection string for your database:
+
 ```env
 DATABASE_URL=postgresql://username:password@host:port/database
 ```
 
 **Examples:**
+
 - **Neon:** `postgresql://user:pass@host.neon.tech/db?sslmode=require`
 - **Local:** `postgresql://postgres:password@localhost:5432/dino_runner`
 - **Supabase:** `postgresql://postgres:pass@db.project.supabase.co:5432/postgres`
 
 #### Option 2: Individual Database Settings
+
 ```env
 DB_HOST=localhost
 DB_PORT=5432
@@ -40,7 +46,9 @@ DB_PASSWORD=your_password
 ```
 
 #### Option 3: Deno Deploy Standard Variables
+
 These are automatically set when using Deno Deploy's PostgreSQL add-on:
+
 ```env
 PGHOST=your-host
 PGUSER=your-user
@@ -50,13 +58,16 @@ PGPORT=5432
 ```
 
 ### Feature Flags (Stage 4)
+
 - `ENABLE_LEADERBOARD=true`: Enable global leaderboard functionality
 - `ENABLE_CUSTOMIZATION=true`: Enable player customization features
 
 ## Stage-Specific Requirements
 
 ### Stages 1-3
+
 Only need basic server configuration:
+
 ```env
 PORT=8000
 HOST=localhost
@@ -68,12 +79,14 @@ Requires database configuration in addition to server settings. Choose one of th
 ## Database Setup for Stage 4
 
 ### Using Neon (Recommended)
+
 1. Visit [neon.tech](https://neon.tech) and create a free account
 2. Create a new PostgreSQL database project
 3. Copy the connection string from the dashboard
 4. Set `DATABASE_URL` in your `.env` file
 
 ### Using Local PostgreSQL
+
 1. Install PostgreSQL on your system
 2. Create a database: `createdb dino_runner`
 3. Create a user with appropriate permissions
@@ -82,18 +95,21 @@ Requires database configuration in addition to server settings. Choose one of th
 ## Testing Your Configuration
 
 ### Test Stages 1-3
+
 ```bash
 cd packages/stage-1
 deno run --allow-net --allow-env --allow-read src/main.ts
 ```
 
 ### Test Stage 4
+
 ```bash
 cd packages/stage-4
 deno run --allow-net --allow-env --allow-read src/main.ts
 ```
 
 The application will automatically:
+
 - Load environment variables from the root `.env` file
 - Initialize the database schema (Stage 4)
 - Display connection status in the console
@@ -101,13 +117,16 @@ The application will automatically:
 ## Troubleshooting
 
 ### Environment File Not Found
+
 Make sure you've copied `.env.example` to `.env` in the **root directory** (`d:\game\.env`), not in individual stage directories.
 
 ### Database Connection Issues (Stage 4)
+
 1. Verify your database is running and accessible
 2. Check your connection string format
 3. Ensure your database user has the required permissions
 4. For cloud databases, verify network connectivity and SSL settings
 
 ### Port Already in Use
+
 If port 8000 is busy, change the `PORT` value in your `.env` file to an available port (e.g., 8001, 3000, etc.).
