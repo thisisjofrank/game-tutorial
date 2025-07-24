@@ -1,0 +1,12 @@
+[submodule "packages/stage-1"]
+	path = packages/stage-1
+	url = https://github.com/thisisjofrank/game-tutorial-stage-1.git
+[submodule "packages/stage-2"]
+	path = packages/stage-2
+	url = https://github.com/thisisjofrank/game-tutorial-stage-2.git
+[submodule "packages/stage-3"]
+	path = packages/stage-3
+	url = https://github.com/thisisjofrank/game-tutorial-stage-3.git
+[submodule "packages/stage-4"]
+	path = packages/stage-4
+	url = https://github.com/thisisjofrank/game-tutorial-stage-4.git
