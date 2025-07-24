@@ -1,0 +1,108 @@
+{
+    "folders": [
+        {
+            "name": "🦕 Game Tutorial (Root)",
+            "path": "."
+        },
+        {
+            "name": "📁 Stage 1 - Foundation",
+            "path": "./packages/stage-1"
+        },
+        {
+            "name": "📁 Stage 2 - Enhanced Features", 
+            "path": "./packages/stage-2"
+        },
+        {
+            "name": "📁 Stage 3 - Advanced Gameplay",
+            "path": "./packages/stage-3"
+        },
+        {
+            "name": "📁 Stage 4 - Database Integration",
+            "path": "./packages/stage-4"
+        }
+    ],
+    "settings": {
+        "deno.enable": true,
+        "deno.unstable": false,
+        "deno.config": "./deno.json",
+        "typescript.preferences.includePackageJsonAutoImports": "off",
+        "files.exclude": {
+            "**/deno.lock": true,
+            "game-tutorial-stage-*": true
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "denoland.vscode-deno"
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "🚀 Dev: Stage 1",
+                "type": "shell",
+                "command": "deno",
+                "args": ["task", "dev:stage1"],
+                "group": "build",
+                "problemMatcher": [],
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new",
+                    "showReuseMessage": true,
+                    "clear": false
+                }
+            },
+            {
+                "label": "🚀 Dev: Stage 2", 
+                "type": "shell",
+                "command": "deno",
+                "args": ["task", "dev:stage2"],
+                "group": "build",
+                "problemMatcher": [],
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new",
+                    "showReuseMessage": true,
+                    "clear": false
+                }
+            },
+            {
+                "label": "🚀 Dev: Stage 3",
+                "type": "shell", 
+                "command": "deno",
+                "args": ["task", "dev:stage3"],
+                "group": "build",
+                "problemMatcher": [],
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always", 
+                    "focus": false,
+                    "panel": "new",
+                    "showReuseMessage": true,
+                    "clear": false
+                }
+            },
+            {
+                "label": "🚀 Dev: Stage 4",
+                "type": "shell",
+                "command": "deno", 
+                "args": ["task", "dev:stage4"],
+                "group": "build",
+                "problemMatcher": [],
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false, 
+                    "panel": "new",
+                    "showReuseMessage": true,
+                    "clear": false
+                }
+            }
+        ]
+    }
+}

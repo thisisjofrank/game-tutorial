@@ -1,0 +1,22 @@
+{
+    "workspace": [
+        "./packages/stage-1",
+        "./packages/stage-2",
+        "./packages/stage-3",
+        "./packages/stage-4"
+    ],
+    "tasks": {
+        "dev:stage1": "cd packages/stage-1 && deno run --allow-net --allow-read --allow-env --watch src/main.ts",
+        "dev:stage2": "cd packages/stage-2 && deno run --allow-net --allow-read --allow-env --env-file --watch src/main.ts",
+        "dev:stage3": "cd packages/stage-3 && deno run --allow-net --allow-read --allow-env --env-file --watch src/main.ts",
+        "dev:stage4": "cd packages/stage-4 && deno run --allow-net --allow-read --allow-env --env-file --watch src/main.ts",
+        "start:stage1": "cd packages/stage-1 && deno run --allow-net --allow-read --allow-env src/main.ts",
+        "start:stage2": "cd packages/stage-2 && deno run --allow-net --allow-read --allow-env src/main.ts",
+        "start:stage3": "cd packages/stage-3 && deno run --allow-net --allow-read --allow-env src/main.ts",
+        "start:stage4": "cd packages/stage-4 && deno run --allow-net --allow-read --allow-env src/main.ts"
+    },
+    "imports": {
+        "@oak/oak": "jsr:@oak/oak@17",
+        "pg": "npm:pg@^8.16.3"
+    }
+}
