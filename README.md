@@ -19,14 +19,20 @@ game from scratch!
 ## Tutorial Progression
 
 This tutorial is designed to be followed in order. Each stage builds on the
-previous one:
+previous one. You can either check out the code for each stage, or you can use
+the starter kits and write the code yourself using the provided instructions in
+each starter kit.
 
-| Stage                                     | Focus                | What You'll Learn                                |
-| ----------------------------------------- | -------------------- | ------------------------------------------------ |
-| **[Stage 1](packages/stage-1/README.md)** | Foundation & Setup   | Basic web server, static files, API endpoints    |
-| **[Stage 2](packages/stage-2/README.md)** | Enhanced Features    | Environment config, error handling, enhanced API |
-| **[Stage 3](packages/stage-3/README.md)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics   |
-| **[Stage 4](packages/stage-4/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization     |
+| Stage                                                         | Focus                | What You'll Learn                                |
+| ------------------------------------------------------------- | -------------------- | ------------------------------------------------ |
+| **[Stage 1](packages/stage-1/README.md)**                     | Foundation & Setup   | Basic web server, static files, API endpoints    |
+| **[Stage 1 starter kit](packages/stage-1-starter/README.md)** |                      |                                                  |
+| **[Stage 2](packages/stage-2/README.md)**                     | Enhanced Features    | Canvas setup, drawing shapes, handling input     |
+| **[Stage 2 starter kit](packages/stage-2-starter/README.md)** |                      |                                                  |
+| **[Stage 3](packages/stage-3/README.md)**                     | Advanced Gameplay    | Game logic, score tracking, advanced mechanics   |
+| **[Stage 3 starter kit](packages/stage-3-starter/README.md)** |                      |                                                  |
+| **[Stage 4](packages/stage-4/README.md)**                     | Database Integration | PostgreSQL, leaderboards, user customization     |
+| **[Stage 4 starter kit](packages/stage-4-starter/README.md)** |                      |                                                  |
 
 ## Running the Stages
 
