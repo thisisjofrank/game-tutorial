@@ -10,11 +10,33 @@ game from scratch!
 
 1. **Install Deno**: Visit [deno.com](https://deno.com/) and follow installation
    instructions
-2. **Clone this repository**:
-   `git clone https://github.com/thisisjofrank/game-tutorial.git`
-3. **Set up environment**: `cp .env.example .env` (edit if needed)
-4. **Start with Stage 1**: `deno task dev:stage1`
-5. **Open your browser**: Visit [http://localhost:8000](http://localhost:8000)
+2. **Clone this repository with all submodules**:
+
+   ```bash
+   git clone --recursive https://github.com/thisisjofrank/game-tutorial.git
+   ```
+   
+   *Or if you've already cloned without submodules:*
+
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+3. **Navigate to the project**: `cd game-tutorial`
+4. **Quick setup** (optional): Run the setup script for automatic configuration:
+
+   ```bash
+   # On Unix/Linux/macOS
+   ./setup.sh
+   
+   # On Windows
+   setup.bat
+   ```
+
+5. **Manual setup**: Or set up manually:
+   - `cp .env.example .env` (edit if needed)
+6. **Start with Stage 1**: `deno task dev:stage1`
+7. **Open your browser**: Visit [http://localhost:8000](http://localhost:8000)
 
 ## Tutorial Progression
 
@@ -129,6 +151,36 @@ deno task dev
 - **pg**: PostgreSQL client (Stage 4 only)
 
 All dependencies are managed at the workspace level in the root `deno.json`.
+
+## Working with Submodules
+
+This repository uses git submodules to organize each tutorial stage. Here are some useful commands:
+
+### Updating all submodules to latest
+
+```bash
+git submodule update --remote
+```
+
+### Updating a specific submodule
+
+```bash
+git submodule update --remote packages/stage-1
+```
+
+### If you cloned without `--recursive`
+
+```bash
+git submodule update --init --recursive
+```
+
+### Checking submodule status
+
+```bash
+git submodule status
+```
+
+Each stage is maintained in its own repository, allowing for independent development and version control while keeping the tutorial organized in a single place.
 
 ## Development
 
