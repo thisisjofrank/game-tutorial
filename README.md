@@ -137,6 +137,14 @@ some useful commands:
 git submodule update --remote
 ```
 
+*Or if you have local changes to preserve:*
+
+```bash
+git submodule foreach --recursive 'git fetch origin && git reset --hard origin/main || echo "Could not reset $name"'
+git add .
+git commit -m "Update all submodules to latest versions"
+```
+
 ### Updating a specific submodule
 
 ```bash
