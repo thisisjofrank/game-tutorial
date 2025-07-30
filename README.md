@@ -15,8 +15,8 @@ game from scratch!
    ```bash
    git clone --recursive https://github.com/thisisjofrank/game-tutorial.git
    ```
-   
-   *Or if you've already cloned without submodules:*
+
+   _Or if you've already cloned without submodules:_
 
    ```bash
    git submodule update --init --recursive
@@ -28,7 +28,7 @@ game from scratch!
    ```bash
    # On Unix/Linux/macOS
    ./setup.sh
-   
+
    # On Windows
    setup.bat
    ```
@@ -41,20 +41,20 @@ game from scratch!
 ## Tutorial Progression
 
 This tutorial is designed to be followed in order. Each stage builds on the
-previous one. You can either check out the code for each stage, or you can use
+previous one. You can either deploy and check out the finished code for each stage, or you can use
 the starter kits and write the code yourself using the provided instructions in
 each starter kit.
 
-| Stage                                                         | Focus                | What You'll Learn                              |
-| ------------------------------------------------------------- | -------------------- | ---------------------------------------------- |
-| **[Stage 1](packages/stage-1/README.md)**                     | Foundation & Setup   | Basic web server, static files, API endpoints  |
-| **[Stage 1 starter kit](packages/stage-1-starter/README.md)** |                      |                                                |
-| **[Stage 2](packages/stage-2/README.md)**                     | Enhanced Features    | Canvas setup, drawing shapes, handling input   |
-| **[Stage 2 starter kit](packages/stage-2-starter/README.md)** |                      |                                                |
-| **[Stage 3](packages/stage-3/README.md)**                     | Advanced Gameplay    | Game logic, score tracking, advanced mechanics |
-| **[Stage 3 starter kit](packages/stage-3-starter/README.md)** |                      |                                                |
-| **[Stage 4](packages/stage-4/README.md)**                     | Database Integration | PostgreSQL, leaderboards, user customization   |
-| **[Stage 4 starter kit](packages/stage-4-starter/README.md)** |                      |                                                |
+| Stage                                                           | Focus                | What You'll Learn                              |
+| --------------------------------------------------------------- | -------------------- | ---------------------------------------------- |
+| **[Stage 1 - starter kit](packages/stage-1-starter/README.md)** | Foundation & Setup   | Basic web server, static files, API endpoints  |
+| **[Stage 1 - finished](packages/stage-1/README.md)**            |                      |                                                |
+| **[Stage 2 - starter kit](packages/stage-2-starter/README.md)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   |
+| **[Stage 2 - finished](packages/stage-2/README.md)**            |                      |                                                |
+| **[Stage 3 - starter kit](packages/stage-3-starter/README.md)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics |
+| **[Stage 3 - finished](packages/stage-3/README.md)**            |                      |                                                |
+| **[Stage 4 - starter kit](packages/stage-4-starter/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization   |
+| **[Stage 4 - finished](packages/stage-4/README.md)**            |                      |                                                |
 
 ## Running the Stages
 
@@ -78,20 +78,6 @@ cd packages/stage-1
 deno task dev
 ```
 
-```bash
-# Stage 1 - Foundation & Setup
-deno task dev:stage1
-
-# Stage 2 - Enhanced Features  
-deno task dev:stage2
-
-# Stage 3 - Advanced Gameplay
-deno task dev:stage3
-
-# Stage 4 - Database Integration
-deno task dev:stage4
-```
-
 #### Production Mode
 
 ```bash
@@ -108,37 +94,28 @@ deno task start:stage3
 deno task start:stage4
 ```
 
-### Working with Individual Stages
+# Tutorial Stages
 
-You can also navigate to any stage and run it directly:
-
-```bash
-cd packages/stage-1
-deno task dev
-```
-
-## Tutorial Stages
-
-### Stage 1: Foundation & Setup
+## Stage 1: Foundation & Setup
 
 - Basic web server setup with Oak
 - Static file serving
 - Simple API endpoints
 - Health checks
 
-### Stage 2: Enhanced Features
+## Stage 2: Enhanced Features
 
 - Environment configuration
 - Improved error handling
 - Extended API functionality
 
-### Stage 3: Advanced Gameplay
+## Stage 3: Advanced Gameplay
 
 - Game logic implementation
 - Score tracking
 - Advanced game mechanics
 
-### Stage 4: Database Integration & Global Leaderboards
+## Stage 4: Database Integration & Global Leaderboards
 
 - PostgreSQL database integration
 - User customization features
@@ -154,7 +131,8 @@ All dependencies are managed at the workspace level in the root `deno.json`.
 
 ## Working with Submodules
 
-This repository uses git submodules to organize each tutorial stage. Here are some useful commands:
+This repository uses git submodules to organize each tutorial stage. Here are
+some useful commands:
 
 ### Updating all submodules to latest
 
@@ -180,7 +158,9 @@ git submodule update --init --recursive
 git submodule status
 ```
 
-Each stage is maintained in its own repository, allowing for independent development and version control while keeping the tutorial organized in a single place.
+Each stage is maintained in its own repository, allowing for independent
+development and version control while keeping the tutorial organized in a single
+place.
 
 ## Development
 
