@@ -41,20 +41,20 @@ game from scratch!
 ## Tutorial Progression
 
 This tutorial is designed to be followed in order. Each stage builds on the
-previous one. You can either deploy and check out the finished code for each stage, or you can use
-the starter kits and write the code yourself using the provided instructions in
-each starter kit.
+previous one. You can either deploy and check out the finished code for each
+stage, or you can use the starter kits and write the code yourself using the
+provided instructions in each starter kit.
 
-| Stage                                                           | Focus                | What You'll Learn                              |
-| --------------------------------------------------------------- | -------------------- | ---------------------------------------------- |
-| **[Stage 1 - starter kit](packages/stage-1-starter/README.md)** | Foundation & Setup   | Basic web server, static files, API endpoints  |
-| **[Stage 1 - finished](packages/stage-1/README.md)**            |                      |                                                |
-| **[Stage 2 - starter kit](packages/stage-2-starter/README.md)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   |
-| **[Stage 2 - finished](packages/stage-2/README.md)**            |                      |                                                |
-| **[Stage 3 - starter kit](packages/stage-3-starter/README.md)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics |
-| **[Stage 3 - finished](packages/stage-3/README.md)**            |                      |                                                |
-| **[Stage 4 - starter kit](packages/stage-4-starter/README.md)** | Database Integration | PostgreSQL, leaderboards, user customization   |
-| **[Stage 4 - finished](packages/stage-4/README.md)**            |                      |                                                |
+| Stage                                                                             | Focus                | What You'll Learn                              | Get started                                                                                                                                                          |
+| --------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[1 - starter](https://github.com/thisisjofrank/game-tutorial-stage-1-starter)** | Foundation & Setup   | Basic web server, static files, API endpoints  | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1-starter.git&install=deno+install) |
+| **[1 - finished](https://github.com/thisisjofrank/game-tutorial-stage-1)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1.git&install=deno+install)         |
+| **[2 - starter](https://github.com/thisisjofrank/game-tutorial-stage-2-starter)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2-starter.git&install=deno+install) |
+| **[2 - finished](https://github.com/thisisjofrank/game-tutorial-stage-2)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2.git&install=deno+install)         |
+| **[3 - starter](https://github.com/thisisjofrank/game-tutorial-stage-3-starter)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install) |
+| **[3 - finished](https://github.com/thisisjofrank/game-tutorial-stage-3)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3.git&install=deno+install)         |
+| **[4 - starter](https://github.com/thisisjofrank/game-tutorial-stage-4-starter)** | Database Integration | PostgreSQL, leaderboards, user customization   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
+| **[4 - finished](https://github.com/thisisjofrank/game-tutorial-stage-4)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
 
 ## Running the Stages
 
