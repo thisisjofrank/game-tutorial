@@ -6,28 +6,24 @@ game from scratch!
 
 ## Quick Start
 
-In order to run this tutorial, you will need to have Deno installed. Visit
-[deno.com](https://deno.com/) and follow installation instructions.
-
 You can either clone this repository with all submodules to explore the code, or
 start with a specific stage. We've created easily deployable starter kits for
-each stage, allowing you to focus on learning without worrying about setup. We've also provided the
-finished packages if you'd rather see the completed code and read through it
-yourself.
+each stage, allowing you to focus on learning without worrying about setup.
+We've also provided the finished packages if you'd rather see the completed code
+and read through it yourself.
 
-We want to make this tutorial as accessible as possible, so you can choose
-your own adventure! Whether you prefer to start from scratch with the starter
-kits, dive into the finished code, or explore the monorepo, this tutorial is designed to help you learn
-at your own pace. Choose the approach that suits you best from below and start building your Dino Runner game today!
+We want to make this tutorial as accessible as possible, so you can choose your
+own adventure! Choose the approach that suits you best from below and start
+building your Dino Runner game today!
 
-## Using the starter kits
+## Option 1: Using the starter kits
 
 Each starter kit is designed to be easily deployable on Deno Deploy. You can
 start with any stage, but we recommend starting with Stage 1 to build a solid
 foundation, then progress through the stages sequentially, the readme files in
 each stage will guide you through the process.
 
-## Using the finished code
+## Option 2: Using the finished code
 
 If you prefer to see the completed code for each stage, you can deploy the
 finished packages directly. This allows you to explore the final implementation
@@ -39,20 +35,20 @@ will provide insights into the code structure and functionality.
 | Stage                                                                             | Focus                | What You'll Learn                              | Get started                                                                                                                                                          |
 | --------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **[1 - starter](https://github.com/thisisjofrank/game-tutorial-stage-1-starter)** | Foundation & Setup   | Basic web server, static files, API endpoints  | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1-starter.git&install=deno+install) |
-| **[1 - finished](https://github.com/thisisjofrank/game-tutorial-stage-1)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1.git&install=deno+install)         |
+| **[1 - finished](https://github.com/thisisjofrank/game-tutorial-stage-1)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1.git&install=deno+install)         |
 | **[2 - starter](https://github.com/thisisjofrank/game-tutorial-stage-2-starter)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2-starter.git&install=deno+install) |
-| **[2 - finished](https://github.com/thisisjofrank/game-tutorial-stage-2)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2.git&install=deno+install)         |
+| **[2 - finished](https://github.com/thisisjofrank/game-tutorial-stage-2)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2.git&install=deno+install)         |
 | **[3 - starter](https://github.com/thisisjofrank/game-tutorial-stage-3-starter)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install) |
-| **[3 - finished](https://github.com/thisisjofrank/game-tutorial-stage-3)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3.git&install=deno+install)         |
+| **[3 - finished](https://github.com/thisisjofrank/game-tutorial-stage-3)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3.git&install=deno+install)         |
 | **[4 - starter](https://github.com/thisisjofrank/game-tutorial-stage-4-starter)** | Database Integration | PostgreSQL, leaderboards, user customization   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
-| **[4 - finished](https://github.com/thisisjofrank/game-tutorial-stage-4)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
+| **[4 - finished](https://github.com/thisisjofrank/game-tutorial-stage-4)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
 
-## Running the stages from this monorepo
+## Option 3: Running the stages from this monorepo
 
-If you'd rather clone this repo and see all the code in one place, you can
-run the stages directly from this monorepo. Each stage is organized as a
-submodule, allowing you to work on them independently while sharing the same
-workspace configuration.
+If you'd rather clone this repo and see all the code in one place, you can run
+the stages directly from this monorepo. Each stage is organized as a submodule,
+allowing you to work on them independently while sharing the same workspace
+configuration.
 
 ```bash
 git clone --recurse-submodules
