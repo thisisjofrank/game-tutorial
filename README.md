@@ -6,44 +6,35 @@ game from scratch!
 
 ## Quick Start
 
-**New to this tutorial?** Start here:
+In order to run this tutorial, you will need to have Deno installed. Visit
+[deno.com](https://deno.com/) and follow installation instructions.
 
-1. **Install Deno**: Visit [deno.com](https://deno.com/) and follow installation
-   instructions
-2. **Clone this repository with all submodules**:
+You can either clone this repository with all submodules to explore the code, or
+start with a specific stage. We've created easily deployable starter kits for
+each stage, allowing you to focus on learning without worrying about setup. We've also provided the
+finished packages if you'd rather see the completed code and read through it
+yourself.
 
-   ```bash
-   git clone --recursive https://github.com/thisisjofrank/game-tutorial.git
-   ```
+We want to make this tutorial as accessible as possible, so you can choose
+your own adventure! Whether you prefer to start from scratch with the starter
+kits, dive into the finished code, or explore the monorepo, this tutorial is designed to help you learn
+at your own pace. Choose the approach that suits you best from below and start building your Dino Runner game today!
 
-   _Or if you've already cloned without submodules:_
+## Using the starter kits
 
-   ```bash
-   git submodule update --init --recursive
-   ```
+Each starter kit is designed to be easily deployable on Deno Deploy. You can
+start with any stage, but we recommend starting with Stage 1 to build a solid
+foundation, then progress through the stages sequentially, the readme files in
+each stage will guide you through the process.
 
-3. **Navigate to the project**: `cd game-tutorial`
-4. **Quick setup** (optional): Run the setup script for automatic configuration:
+## Using the finished code
 
-   ```bash
-   # On Unix/Linux/macOS
-   ./setup.sh
+If you prefer to see the completed code for each stage, you can deploy the
+finished packages directly. This allows you to explore the final implementation
+and understand how each part of the game works. The readme files in each stage
+will provide insights into the code structure and functionality.
 
-   # On Windows
-   setup.bat
-   ```
-
-5. **Manual setup**: Or set up manually:
-   - `cp .env.example .env` (edit if needed)
-6. **Start with Stage 1**: `deno task dev:stage1`
-7. **Open your browser**: Visit [http://localhost:8000](http://localhost:8000)
-
-## Tutorial Progression
-
-This tutorial is designed to be followed in order. Each stage builds on the
-previous one. You can either deploy and check out the finished code for each
-stage, or you can use the starter kits and write the code yourself using the
-provided instructions in each starter kit.
+## Choose your adventure!
 
 | Stage                                                                             | Focus                | What You'll Learn                              | Get started                                                                                                                                                          |
 | --------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,7 +47,17 @@ provided instructions in each starter kit.
 | **[4 - starter](https://github.com/thisisjofrank/game-tutorial-stage-4-starter)** | Database Integration | PostgreSQL, leaderboards, user customization   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
 | **[4 - finished](https://github.com/thisisjofrank/game-tutorial-stage-4)**        |                      |                                                | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install)         |
 
-## Running the Stages
+## Running the stages from this monorepo
+
+If you'd rather clone this repo and see all the code in one place, you can
+run the stages directly from this monorepo. Each stage is organized as a
+submodule, allowing you to work on them independently while sharing the same
+workspace configuration.
+
+```bash
+git clone --recurse-submodules
+cd game
+```
 
 ### Quick Commands (from root directory)
 
