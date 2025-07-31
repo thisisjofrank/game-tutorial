@@ -23,6 +23,8 @@ start with any stage, but we recommend starting with Stage 1 to build a solid
 foundation, then progress through the stages sequentially, the readme files in
 each stage will guide you through the process.
 
+[![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1-starter.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)
+
 ## Option 2: Using the finished code
 
 If you prefer to see the completed code for each stage, you can deploy the
@@ -30,18 +32,12 @@ finished packages directly. This allows you to explore the final implementation
 and understand how each part of the game works. The readme files in each stage
 will provide insights into the code structure and functionality.
 
-## Choose your adventure!
-
-| Stage                                                                             | Focus                | What You'll Learn                              | Get started                                                                                                                                                          |
-| --------------------------------------------------------------------------------- | -------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[1 - starter](https://github.com/thisisjofrank/game-tutorial-stage-1-starter)** | Foundation & Setup   | Basic web server, static files, API endpoints  | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1-starter.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
-| **[1 - finished](https://github.com/thisisjofrank/game-tutorial-stage-1)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)         |
-| **[2 - starter](https://github.com/thisisjofrank/game-tutorial-stage-2-starter)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2-starter.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
-| **[2 - finished](https://github.com/thisisjofrank/game-tutorial-stage-2)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)         |
-| **[3 - starter](https://github.com/thisisjofrank/game-tutorial-stage-3-starter)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
-| **[3 - finished](https://github.com/thisisjofrank/game-tutorial-stage-3)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)         |
-| **[4 - starter](https://github.com/thisisjofrank/game-tutorial-stage-4-starter)** | Database Integration | PostgreSQL, leaderboards, user customization   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)         |
-| **[4 - finished](https://github.com/thisisjofrank/game-tutorial-stage-4)**        | "                    | "                                              | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts)         |
+| Stage                                                                 | Focus                | What You'll Learn                              | Get started                                                                                                                                                                                      |
+| --------------------------------------------------------------------- | -------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[Stage 1](https://github.com/thisisjofrank/game-tutorial-stage-1)** | Foundation & Setup   | Basic web server, static files, API endpoints  | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-1.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
+| **[Stage 2](https://github.com/thisisjofrank/game-tutorial-stage-2)** | Enhanced Features    | Canvas setup, drawing shapes, handling input   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-2.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
+| **[Stage 3](https://github.com/thisisjofrank/game-tutorial-stage-3)** | Advanced Gameplay    | Game logic, score tracking, advanced mechanics | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
+| **[Stage 4](https://github.com/thisisjofrank/game-tutorial-stage-4)** | Database Integration | PostgreSQL, leaderboards, user customization   | [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-4.git&install=deno+install&mode=dynamic&entrypoint=src/main.ts) |
 
 ## Option 3: Running the stages from this monorepo
 
@@ -137,7 +133,7 @@ some useful commands:
 git submodule update --remote
 ```
 
-*Or if you have local changes to preserve:*
+_Or if you have local changes to preserve:_
 
 ```bash
 git submodule foreach --recursive 'git fetch origin && git reset --hard origin/main || echo "Could not reset $name"'
