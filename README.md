@@ -4,6 +4,9 @@ A comprehensive step-by-step tutorial series for building a Dino Runner game
 using Deno and TypeScript. Learn modern web development by building a complete
 game from scratch!
 
+![Gif of the game, a square 'dinosaur' runs through a desert, jumping over cacti](https://github.com/user-attachments/assets/35836650-aafc-461f-a536-1bccb18a5c81)
+
+
 ## Quick Start
 
 You can either clone this repository with all submodules to explore the code, or
